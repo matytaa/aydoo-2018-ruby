@@ -21,3 +21,5 @@ Una vez realizada la instalación:
 
 1. Instalar las dependencias del proyecto ejecutando _bundle install_
 2. Ejecutar las pruebas ejecutando _rake_
+
+[![Build Status](https://travis-ci.org/matytaa/aydoo-2018-ruby.svg?branch=master)](https://travis-ci.org/matytaa/aydoo-2018-ruby)
