@@ -18,6 +18,10 @@ class Vaso
 		@contiene_cafe = true
 	end
 
+	def poner_te()
+		@contiene_te = true
+	end
+
 	def poner_azucar(una_cantidad_de_azucar)
 		@cantidad_de_azucar = una_cantidad_de_azucar
 	end
