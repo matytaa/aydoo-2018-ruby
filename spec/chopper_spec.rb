@@ -31,7 +31,7 @@ describe 'Chopper' do
   end
   
   it 'sum de [] deberia ser vacio' do
-    expect(chopper.sum([])).to eq 'vacio' 
+    expect(chopper.sum([])).to eq 'vacio'
   end
   
   it 'sum de [1] deberia ser uno' do
