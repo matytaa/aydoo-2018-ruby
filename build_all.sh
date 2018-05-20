@@ -4,8 +4,7 @@ set -e
 
 for dir in */ ; do
   cd $dir
-  bundle update
-  bundle install --no-deployment
+  bundle install
   rake
   cd ..
 done
