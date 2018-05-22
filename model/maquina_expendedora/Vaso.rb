@@ -1,9 +1,12 @@
 class Vaso
+
 	def inicializate()
 		@contiene_cafe = false
 		@contiene_leche = false
 		@contiene_te = false
 		@cantidad_de_azucar = 0
+		@sustancias = Hash.new
+		
 	end
 
 	def cantidad_de_azucar()

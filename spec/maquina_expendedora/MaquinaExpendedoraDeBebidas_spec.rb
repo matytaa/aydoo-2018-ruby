@@ -14,7 +14,6 @@ class MaquinaExpendedoraDeBebidasSpec
 
 	  it 'deberia hacer cafe con leche con 10 de azucar' do
 	    cantidad_azucar = 10
-
 	    subject.hacer_cafe_con_leche_con_n_de_azucar(un_vaso, cantidad_azucar)
 
 	    expect(un_vaso.cantidad_de_azucar).to eq cantidad_azucar
@@ -25,7 +24,6 @@ class MaquinaExpendedoraDeBebidasSpec
 
 	  it 'deberia hacer te con leche con 0 de azucar' do
 	    cantidad_azucar = 0
-
 	    subject.hacer_te_con_leche_con_n_de_azucar(un_vaso, cantidad_azucar)
 
 	    expect(un_vaso.cantidad_de_azucar).to eq cantidad_azucar
