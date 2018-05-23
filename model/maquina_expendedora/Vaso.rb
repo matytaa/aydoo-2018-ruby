@@ -1,43 +1,36 @@
 class Vaso
 
-	def inicializate()
-		@contiene_cafe = false
-		@contiene_leche = false
-		@contiene_te = false
-		@cantidad_de_azucar = 0
+	def initialize()
 		@sustancias = Hash.new
-		
+	end
+
+	def poner_sustancia(una_sustancia)
+		mis_sustancias = @sustancias.merge(una_sustancia)
+		@sustancias = mis_sustancias
 	end
 
 	def cantidad_de_azucar()
-		return @cantidad_de_azucar
+		cantidad = 0
+		if @sustancias.has_key?(:azucar) == true
+			cantidad = @sustancias[:azucar]
+		end
+		return cantidad
 	end
 
-	def poner_leche()
-		@contiene_leche = true
-	end
-
-	def poner_cafe()
-		@contiene_cafe = true
-	end
-
-	def poner_te()
-		@contiene_te = true
-	end
-
-	def poner_azucar(una_cantidad_de_azucar)
-		@cantidad_de_azucar = una_cantidad_de_azucar
+	def tiene_leche?()
+		return @sustancias.has_key?(:leche)
 	end
 
 	def tiene_cafe?()
-		return @contiene_cafe
+		return @sustancias.has_key?(:cafe)
 	end
 
 	def tiene_azucar?()
-		return @cantidad_de_azucar > 0
+		cantidad = cantidad_de_azucar()
+		return cantidad > 0
 	end
 
 	def tiene_te?()
-		return @contiene_te
+		return @sustancias.has_key?(:te)
 	end
 end

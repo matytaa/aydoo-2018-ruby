@@ -20,6 +20,7 @@ class MaquinaExpendedoraDeBebidasSpec
 	    expect(un_vaso.tiene_cafe?).to be_truthy
 	    expect(un_vaso.tiene_azucar?).to be_truthy
 	    expect(un_vaso.tiene_te?).to be_falsey 
+	    expect(un_vaso.tiene_leche?).to be_truthy
 	  end
 
 	  it 'deberia hacer te con leche con 0 de azucar' do
