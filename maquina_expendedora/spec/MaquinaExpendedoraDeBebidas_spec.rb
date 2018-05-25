@@ -1,10 +1,10 @@
 require 'rspec'
-require_relative '../../model/maquina_expendedora/MaquinaExpendedoraDeBebidas.rb'
-require_relative '../../model/maquina_expendedora/HacedorDeCafe.rb'
-require_relative '../../model/maquina_expendedora/Cafetero.rb'
-require_relative '../../model/maquina_expendedora/Lechero.rb'
-require_relative '../../model/maquina_expendedora/Azucarero.rb'
-require_relative '../../model/maquina_expendedora/Vaso.rb'
+require_relative '../model/MaquinaExpendedoraDeBebidas.rb'
+require_relative '../model/HacedorDeCafe.rb'
+require_relative '../model/Cafetero.rb'
+require_relative '../model/Lechero.rb'
+require_relative '../model/Azucarero.rb'
+require_relative '../model/Vaso.rb'
 
 class MaquinaExpendedoraDeBebidasSpec
 	describe 'MaquinaExpendedoraDeBebidas' do
