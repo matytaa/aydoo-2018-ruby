@@ -12,5 +12,23 @@ class CalcularFibonacciSpec
                         resultado = fibo.calcular(3)
                         expect(resultado.size).to eq 4
                 end
+
+                it 'el item-5 deberia ser 5' do
+                        resultado = fibo.calcular(5)
+                        un_numero = resultado['item-5']
+                        expect(un_numero).to eq 5
+                end
+
+                it 'el item-6 deberia ser 8' do
+                        resultado = fibo.calcular(8)
+                        un_numero = resultado['item-6']
+                        expect(un_numero).to eq 8
+                end
+
+                it 'el item-8 deberia ser 21' do
+                        resultado = fibo.calcular(8)
+                        un_numero = resultado['item-8']
+                        expect(un_numero).to eq 21
+                end
         end
 end
