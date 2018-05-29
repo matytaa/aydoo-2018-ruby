@@ -27,8 +27,14 @@ class CalcularFibonacciSpec
 
                 it 'el item-8 deberia ser 21' do
                         resultado = fibo.calcular(8)
-                        un_numero = resultado['item-8']
+                        un_hash = 'item-'+8.to_s
+                        un_numero = resultado[un_hash]
                         expect(un_numero).to eq 21
+                end
+
+                it 'el resultado deberia ser nulo' do
+                        resultado = fibo.calcular(-5)
+                        expect(resultado).to eq nil
                 end
         end
 end

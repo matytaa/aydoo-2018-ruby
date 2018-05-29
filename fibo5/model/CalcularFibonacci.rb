@@ -18,6 +18,9 @@ class CalcularFibonacci
   	end
 
 	def calcular(un_numero)
+		if un_numero < 0
+			return nil
+		end
 		(0..un_numero).each do |contador|
 			una_clave = 'item-' + contador.to_s
 			hash_parcial = Hash.new
