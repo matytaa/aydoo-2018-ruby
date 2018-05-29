@@ -24,12 +24,4 @@ class CalcularFibonacci
 		array = Array.new(un_numero) { |i| valor_fibo(i)}
 		return array
 	end	
-
-	def calcular_a(un_numero)
-		if un_numero < 0
-			return nil
-		end
-		array = Array.new(un_numero) { |i| valor_fibo(i)}
-		return array
-	end
 end

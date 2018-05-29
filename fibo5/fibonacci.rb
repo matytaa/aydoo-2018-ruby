@@ -1,6 +1,6 @@
 require 'sinatra'
 require 'json'
-require_relative './model/CalcularFibonacci'
+require_relative './model/Fibonacci'
 
 
 get '/fibonacci/:id' do
@@ -9,7 +9,7 @@ get '/fibonacci/:id' do
     	un_numero = numero[:id].to_i
     end
 
-	fibo = CalcularFibonacci.new
+	fibo = Fibonacci.new
   	resultado = fibo.calcular(un_numero)
   	resultado.to_json
 end
