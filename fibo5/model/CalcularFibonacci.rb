@@ -21,12 +21,15 @@ class CalcularFibonacci
 		if un_numero < 0
 			return nil
 		end
-		(0..un_numero).each do |contador|
-			una_clave = 'item-' + contador.to_s
-			hash_parcial = Hash.new
-			hash_parcial[una_clave] = valor_fibo(contador)
-  			@listaDeValores = @listaDeValores.merge(hash_parcial)
-		end
-		return @listaDeValores
+		array = Array.new(un_numero) { |i| valor_fibo(i)}
+		return array
 	end	
+
+	def calcular_a(un_numero)
+		if un_numero < 0
+			return nil
+		end
+		array = Array.new(un_numero) { |i| valor_fibo(i)}
+		return array
+	end
 end
