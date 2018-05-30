@@ -11,7 +11,6 @@ class Impresora
   		if tipo_impresora == 1
   			resultado = ImpresoraFormatoLista.new.imprimir(un_array)
   		elsif tipo_impresora == 2
-  			puts 'puto'
   			resultado = ImpresoraListaSoloPares.new.imprimir(un_array)
   		elsif tipo_impresora == 3
   			resultado = ImpresoraFormatoListaInvertida.new.imprimir(un_array)

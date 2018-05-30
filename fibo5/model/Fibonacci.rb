@@ -6,6 +6,7 @@ class Fibonacci
     	@numero_fibo = un_numero
     	@impresora = Impresora.new
     	@calcula_fibo = CalcularFibonacci.new()
+    	@numero_impresora = 1
   	end
 
   	def get_numero()
